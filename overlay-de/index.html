@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Offline Day Overlay Beispiel</title>
+  <!-- Beginn Overlay -->
+  <link rel="stylesheet" href="blackout/style.css">
+  <script src="blackout/overlay.js">
+
+  </script>
+  <!-- End Overlay -->
+</head>
+
+<body>
+  <!-- Beginn Overlay -->
+  <div id="offlineday_overlay">
+    <div id="overlay_close_box"></div>
+    <h1>Hilfe! Unser Forum ist in Gefahr!</h1>
+  </div>
+  <script>
+    var blackout_config = {
+      time_click: 2,
+      close_text: "Schlie&szlig;en",
+      start: "2019-03-15T00:00:00",
+      end: "2019-03-21T23:59:59",
+      cookie_time: 200,
+    };
+    display_blackout_overlay();
+  </script>
+  <!-- End Overlay -->
+  <div>Irgendein Inhalt (normales Forum)</div>
+  <a href="javascript:void(0)" onclick="force_display_blackout_overlay()">Erneut anzeigen</a>
+</body>
