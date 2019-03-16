@@ -12,4 +12,50 @@
   z-index: 99;
   cursor: pointer;
   padding: 10px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+#offlineday_overlay a {
+  color: #ffffff;
+}
+
+#offlineday_overlay a:hover {
+  text-decoration: none;
+}
+
+#overlay_close_box {
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 10px;
+  font-size: 35px;
+}
+
+.overlay_list {
+  display: inline-block;
+}
+
+.overlay_content {
+  font-size: 20px;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/open-sans-v15-latin-regular.eot');
+  /* IE9 Compat Modes */
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+    url('fonts/open-sans-v15-latin-regular.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('fonts/open-sans-v15-latin-regular.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('fonts/open-sans-v15-latin-regular.woff') format('woff'),
+    /* Modern Browsers */
+    url('fonts/open-sans-v15-latin-regular.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('fonts/open-sans-v15-latin-regular.svg#OpenSans') format('svg');
+  /* Legacy iOS */
 }
