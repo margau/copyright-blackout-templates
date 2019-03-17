@@ -36,7 +36,7 @@
   </div>
   <script>
     var blackout_config = {
-      time_click: 2,
+      time_click: 0,
       close_text: "&times;",
       start: "2019-03-15T00:00:00",
       end: "2019-03-21T23:59:59",
@@ -47,6 +47,51 @@
   <!-- End Overlay -->
   <div>
     <h1>Copyright-Blackout Overlay</h1>
+    <h2>Anleitung</h2>
+    <p><b>Schritt 1:</b> <a href="https://github.com/margau/copyright-blackout-templates/archive/master.zip">Download der Dateien</a></p>
+    <p>Die benötigten Dateien liegen unter "overlay-de" - der Unterordner "blackout" muss ins Stammverzeichnis der Website geschoben werden.</p>
+    <p><b>Schritt 2:</b> Einbinden des Headers</p>
+    <p>Folgender Code muss in den &lt;head&gt;-Bereich eingebungen werden (ggf. Pfade anpassen!):</p>
+    <textarea cols="100" rows="3">
+      <link rel="stylesheet" href="blackout/style.css">
+      <script src="blackout/overlay.js">
+      </script>
+    </textarea>
+    <p><b>Schritt 3:</b> Einbinden des Bodys</p>
+    <p>Folgender Code muss in den &lt;body&gt;-Bereich eingebungen werden, hier können auch Einstellungen und Textanpassungen vorgenommen werden:</p>
+    <textarea cols="100" rows="25">
+      <div id="offlineday_overlay">
+        <div id="overlay_close_box"></div>
+        <h1>Unser Forum ist in Gefahr!</h1>
+        <p class="overlay_content">
+          Liebe Besucher,<br>
+          leider müssen wir euch kurz unterbrechen:
+        </p>
+        <p class="overlay_content">
+          Das EU-Parlament stimmt nächste Woche über eine Urheberrechtsreform ab,<br>
+          <b>die uns in unserer Existenz bedroht.</b></p>
+        <a class="overlay_content" href="https://foren-gegen-uploadfilter.eu/offener-brief/" target="blank">Offener Brief der Forenbetreiber</a>
+        <p class="overlay_content">Wir bitten euch daher darum, dass ihr<br></p>
+        <ul class="overlay_list overlay_content">
+          <li><a href="https://saveyourinternet.eu/de/" target="blank">die Abgeordneten des EU-Parlamentes kontaktiert und über euren Standpunkt informiert</a></li>
+          <li><a href="https://savetheinternet.info/demos" target="blank">an den Demonstrationen am Samstag teilnehmt</a></li>
+        </ul>
+        <p class="overlay_content">Vielen Dank für eure Unterstützung!</p>
+        <p class="overlay_content">Eure Forenbetreiber</p>
+        <p class="overlay_content">Wir sind Teil des <a href="https://twitter.com/hashtag/321EUOfflineDay" target="blank">#321EUOfflineDay</a></p>
+        <p class="overlay_footer"><a href="https://copyright-blackout.eu" target="blank">copyright-blackout.eu</a> | Lizenzen: <a href="blackout/fonts/OS_LICENSE.txt" target="_blank">OpenSans</a></p>
+      </div>
+      <script>
+        var blackout_config = {
+          time_click: 10, // nach wievielen Sekunden kann man das Overlay schließen, 0=sofort
+          close_text: "&times;", // Symbol/Text für das schließen
+          start: "2019-03-21T00:00:00", // Ab wann wird das Overlay angezeigt
+          end: "2019-03-21T23:59:59", // Bis wann wird das Overlay angezeigt
+          cookie_time: 500, // Wie viele Sekunden wird das Overlay bei einem Reload ausgeblendet
+        };
+        display_blackout_overlay();
+      </script>
+    </textarea>
   </div>
   <a href="javascript:void(0)" onclick="force_display_blackout_overlay()">Erneut anzeigen</a>
 </body>
