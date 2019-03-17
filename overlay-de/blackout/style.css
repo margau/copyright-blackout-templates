@@ -19,6 +19,7 @@
 
 #offlineday_overlay a {
   color: #ffffff;
+  text-decoration: underline;
 }
 
 #offlineday_overlay a:hover {
