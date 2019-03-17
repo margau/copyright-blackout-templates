@@ -16,9 +16,11 @@
   text-align: center;
   overflow-y: scroll;
 }
+
 #offlineday_overlay h1 {
   font-family: 'Open Sans', sans-serif;
 }
+
 #offlineday_overlay a {
   color: #ffffff;
   text-decoration: underline;
@@ -42,6 +44,11 @@
 
 .overlay_content {
   font-size: 20px;
+  margin-block-end: 20px;
+  margin-block-start: 20px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  line-height: 26px;
 }
 
 @font-face {

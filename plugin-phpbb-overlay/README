@@ -1,0 +1,2 @@
+Installation: Den Ordner ins EXT-Verzeichnis kopieren und im ACP aktivieren.
+Anpassungen können in der Datei ext/margau/321EUOfflineDay/styles/all/template/event/overall_header_body_before.html vorgenommen werden (z.B. Text oder Zeitrahmen)
